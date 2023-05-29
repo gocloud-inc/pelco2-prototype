@@ -96,27 +96,21 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 4rem 0;
-    max-height: 80%;
-    color: var(--color-light);
-
+    padding: 6rem 0;
+    
     .cta-content {
-        text-align: center;
-        display: grid;
-        grid-template-columns: 90%;
-        justify-content: center;
-        justify-items: center;
-
         .cta-title {
             font-size: 3rem;
-            font-family: var(--font-serif);
+            font-weight: 600;
             margin-bottom: 0.5rem;
+            color: var(--color-light);
         }
     
         .cta-text {
             font-size: 1.2rem;
             line-height: 1.6;
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
+            color: var(--color-light);
         }
 
         a, button {
