@@ -1,0 +1,143 @@
+.hero-section {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 12rem 0;
+    max-height: 80%;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(var(--color-primary-rgb), 0.1);
+    }
+    
+    .hero-content {
+        position: relative;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 90%;
+        justify-content: center;
+        justify-items: center;
+        
+        @include breakpoint("md") {
+            grid-template-columns: 100%;
+        }
+        
+        .hero-title {
+            font-size: 4rem;
+            font-family: var(--font-serif);
+            margin-bottom: 0.5rem;
+            line-height: 1.1;
+            color: var(--color-light);
+
+            @include breakpoint("sm") {
+                font-size: 2.5rem;
+            }
+        }
+    
+        .hero-text {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: var(--color-light);
+
+            @include breakpoint("sm") {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+.inner-section {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 9rem 0;
+    max-height: 60%;
+    color: var(--color-light);
+
+    .inner-content {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 90%;
+        justify-content: center;
+        justify-items: center;
+
+        @include breakpoint("md") {
+            grid-template-columns: 100%;
+        }
+
+        .inner-title {
+            font-size: 3rem;
+            font-family: var(--font-serif);
+            margin-bottom: 0.5rem;
+
+            @include breakpoint("sm") {
+                font-size: 2.5rem;
+            }
+        }
+    
+        .inner-text {
+            font-size: 1rem;
+            line-height: 1.6;
+
+            @include breakpoint("sm") {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+.cta-section {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 0;
+    max-height: 80%;
+    color: var(--color-light);
+
+    .cta-content {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 90%;
+        justify-content: center;
+        justify-items: center;
+
+        .cta-title {
+            font-size: 3rem;
+            font-family: var(--font-serif);
+            margin-bottom: 0.5rem;
+        }
+    
+        .cta-text {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 3rem;
+        }
+
+        a, button {
+            width: fit-content;
+        }
+    }
+}
+
+.section {
+    padding: 5rem 0;
+
+    .section-title {
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        line-height: 1.2;
+    }
+    
+    .section-text {
+        font-size: 1rem;
+        color: var(--color-dark);
+    }
+}
+

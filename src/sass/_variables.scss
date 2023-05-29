@@ -1,19 +1,11 @@
 :root {
 	// Primary
-	--color-primary: #1da1f2;
-	--color-primary-rgb: 29,161,242;
+	--color-primary: #7900f2;
+	--color-primary-rgb: 121,0,242;
 	--color-primary-contrast: #ffffff;
 	--color-primary-contrast-rgb: 255,255,255;
-	--color-primary-shade: #1a8ed5;
-	--color-primary-tint: #34aaf3;
-
-	// Secondary
-	--color-secondary: #7900f2;
-	--color-secondary-rgb: 121,0,242;
-	--color-secondary-contrast: #ffffff;
-	--color-secondary-contrast-rgb: 255,255,255;
-	--color-secondary-shade: #6a00d5;
-	--color-secondary-tint: #861af3;
+	--color-primary-shade: #6a00d5;
+	--color-primary-tint: #861af3;
 	
 	// Warning
 	--color-warning: #f59d1c;
@@ -151,38 +143,38 @@
 	}
 }
 
-@media(prefers-color-scheme: dark) {
-	body {
-		--color-dark: #d4d4d4;
-		--color-dark-rgb: 212,212,212;
-		--color-dark-contrast: #000000;
-		--color-dark-contrast-rgb: 0,0,0;
-		--color-dark-shade: #bbbbbb;
-		--color-dark-tint: #d8d8d8;
+// @media(prefers-color-scheme: dark) {
+// 	body {
+// 		--color-dark: #d4d4d4;
+// 		--color-dark-rgb: 212,212,212;
+// 		--color-dark-contrast: #000000;
+// 		--color-dark-contrast-rgb: 0,0,0;
+// 		--color-dark-shade: #bbbbbb;
+// 		--color-dark-tint: #d8d8d8;
 
-		--color-light: #000000;
-		--color-light-rgb: 0,0,0;
-		--color-light-contrast: #ffffff;
-		--color-light-contrast-rgb: 255,255,255;
-		--color-light-shade: #000000;
-		--color-light-tint: #1a1a1a;
+// 		--color-light: #000000;
+// 		--color-light-rgb: 0,0,0;
+// 		--color-light-contrast: #ffffff;
+// 		--color-light-contrast-rgb: 255,255,255;
+// 		--color-light-shade: #000000;
+// 		--color-light-tint: #1a1a1a;
 
-		--color-card: #0d141c;
-		--color-card-rgb: 13,20,28;
-		--color-card-contrast: #ffffff;
-		--color-card-contrast-rgb: 255,255,255;
-		--color-card-shade: #0b1219;
-		--color-card-tint: #0d141c;
+// 		--color-card: #0d141c;
+// 		--color-card-rgb: 13,20,28;
+// 		--color-card-contrast: #ffffff;
+// 		--color-card-contrast-rgb: 255,255,255;
+// 		--color-card-shade: #0b1219;
+// 		--color-card-tint: #0d141c;
 
-		img {
-			filter: brightness(.7) contrast(1.2);
-		}
+// 		img {
+// 			filter: brightness(.7) contrast(1.2);
+// 		}
 
-		.btn-close, .accordion-button::after, .footer-logo, .sidebar-logo {
-			filter: brightness(0) invert(0.9);
-		}
-	}
-}
+// 		.btn-close, .accordion-button::after, .footer-logo, .sidebar-logo {
+// 			filter: brightness(0) invert(0.9);
+// 		}
+// 	}
+// }
 
 [data-theme=dark] {
 	body {
