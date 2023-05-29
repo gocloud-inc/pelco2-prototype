@@ -1,7 +1,6 @@
 // Maps: Theme Colors
 $theme-colors: (
     "primary":      var(--color-primary),
-    "warning":      var(--color-warning),
     "danger":       var(--color-danger),
     "light":        var(--color-light),
     "medium":       var(--color-medium),
@@ -11,11 +10,28 @@ $theme-colors: (
 @mixin button($background, $color, $hover-background, $hover-color, $size: 24px) {
     background: $background;
     color: $color;
+    transition: background-color 0.3s ease;
+    overflow: hidden;
 
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.2); /* Replace with desired color */
+        transition: left 0.3s ease;
+    }
+    
     &:hover {
-        background: $hover-background;
+        background-color: $hover-background;
         color: $hover-color;
-        filter: drop-shadow(0 0 0.2em $hover-background);
+        // filter: drop-shadow(0 0 0.2em $hover-background);
+    }
+    
+    &:hover::before {
+        left: 100%;
     }
 
     i, span {
@@ -72,8 +88,8 @@ $theme-colors: (
 
     // Outline styles
     .button-outline-#{$color} {
-        @include button(none, var(--color-#{$color}), rgba(var(--color-#{$color}-rgb), 0.05), var(--color-#{$color}));
-        border: 1px solid rgba(var(--color-#{$color}-rgb), 0.2);
+        @include button(none, var(--color-#{$color}), rgba(var(--color-#{$color}-rgb), 0.9), var(--color-#{$color}-contrast));
+        border: 2px solid rgba(var(--color-#{$color}-rgb), 0.8);
     }
 
     // Link styles
