@@ -15,4 +15,16 @@ export default function Header() {
             }
         });
     }
+
+    document.querySelector('.hamburger-menu').addEventListener('click', function() {
+        this.classList.toggle('active');
+
+        const bar = document.querySelectorAll('.bar');
+        bar.forEach((index) => {
+            index.classList.toggle('background-dark');
+        })
+
+        const navMenuElement = document.querySelector('.nav-menu');
+        navMenuElement.classList.toggle('show');
+    });
 }
