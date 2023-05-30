@@ -44,6 +44,9 @@ export default defineConfig({
                 contactUs: resolve(__dirname, 'contact-us.html'),
                 termsOfUse: resolve(__dirname, 'terms-of-use.html'),
                 privacyPolicy: resolve(__dirname, 'privacy-policy.html'),
+                careers: resolve(__dirname, 'careers.html'),
+                resources: resolve(__dirname, 'resources.html'),
+                services: resolve(__dirname, 'services.html'),
             },
             output: {
                 dir: 'dist',
