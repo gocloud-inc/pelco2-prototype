@@ -41,6 +41,9 @@ export default defineConfig({
                 aboutUs: resolve(__dirname, 'about-us.html'),
                 news: resolve(__dirname, 'news.html'),
                 newsSingle: resolve(__dirname, 'news-single.html'),
+                contactUs: resolve(__dirname, 'contact-us.html'),
+                termsOfUse: resolve(__dirname, 'terms-of-use.html'),
+                privacyPolicy: resolve(__dirname, 'privacy-policy.html'),
             },
             output: {
                 dir: 'dist',
