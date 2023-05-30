@@ -21,6 +21,10 @@
         color: var(--color-medium);
         text-align: left;
         white-space: break-spaces;
+
+        @include breakpoint("sm") {
+            white-space: nowrap;
+        }
     }
 }
 
