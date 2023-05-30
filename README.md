@@ -1,4 +1,4 @@
-## About Start Static Prototype
+## About Pelco 2 Prototype
 
 Start Static Prototype is an innovative and efficient solution for establishing a solid foundation for your website's backbone. Designed to streamline the initial stages of web development, Start Static Prototype offers a simplified and user-friendly interface that enables you to kickstart your website with ease.
 
@@ -12,7 +12,7 @@ To install this project just follow the process chronologically.
 Clone the project via HTTPS
 
 ```bash
-git clone https://github.com/mpc-workspace/ssw-prototype.git
+git clone https://github.com/gocloud-inc/pelco2-prototype.git
 ```
 ## Configuration
 
