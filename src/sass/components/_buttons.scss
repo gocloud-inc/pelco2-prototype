@@ -135,7 +135,7 @@ $button-font-size: 1rem;
 }
 
 .button-lg {
-    @include button-size(2rem, 1rem, 1.2rem);
+    @include button-size(2rem, 1rem, 1rem);
 }
 
 .button-xl {

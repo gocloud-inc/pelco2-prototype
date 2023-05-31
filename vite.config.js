@@ -47,6 +47,7 @@ export default defineConfig({
                 careers: resolve(__dirname, 'careers.html'),
                 resources: resolve(__dirname, 'resources.html'),
                 services: resolve(__dirname, 'services.html'),
+                rates: resolve(__dirname, 'rates.html'),
             },
             output: {
                 dir: 'dist',
