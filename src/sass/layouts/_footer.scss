@@ -1,6 +1,8 @@
+$footer-custom-bg: #1a313f;
+
 // Footer
 footer {
-    background-color: var(--color-dark);
+    background-color: $footer-custom-bg;
     border-top: 4px solid var(--color-primary);
 
     .footer-wrapper {
